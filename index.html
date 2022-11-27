@@ -9,47 +9,61 @@
   </head>
 
   <body>
-    <img
-      src="assets/nithin.jpeg"
-      alt="Profile Image - Nithin"
-      width="300"
-      height="300"
-    />
-    <h1>Hi, I'm Nithin</h1>
-
-    <h2>About Me</h2>
-    <p>An Instrumentation Engineer by profession.</p>
-    <p>
-      In 2017, I started appearing for competitive exams like UPSC-CSE and RBI
-      Grade B
-    </p>
-    <p>From Mid-2022, I've started learning Full-Stack development</p>
-    <p>This website is an attempt to showcase my development knowledge</p>
-
-    <h2>Qualification</h2>
-    <ol>
-      <li>B.E - Instrumentation & Control Enginnering</li>
-    </ol>
-
-    <h2>Hobbies</h2>
-    <ul>
-      <li>Photography</li>
-      <li>Listening to Music</li>
-      <li>Playing Chess</li>
-    </ul>
-    <a href="https://www.linkedin.com/in/nithin-developer"
-      ><img
-        src="assets/linkedin-logo.png"
-        alt="Linkedin-logo"
-        width="30"
-        height="30"
-    /></a>
-    <a href="https://www.github.com/nithin-hunt"
-      ><img
-        src="assets/github-logo.png"
-        alt="GitHub-logo"
-        width="30"
-        height="30"
-    /></a>
+    <div class="container">
+      <div class="intro">
+        <img id="profile-image" src="assets/nithin.jpeg" alt="Profile Image - Nithin" />
+        <h1>Hi, I'm Nithin</h1>
+        <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
+        <p class="social-links">
+          <a href="https://www.linkedin.com/in/nithin-developer"><img src="assets/linkedin-logo.png" alt="Linkedin-logo" width="30" height="30" /></a>
+          <a href="https://www.github.com/nithin-hunt"><img src="assets/github-logo.png" alt="GitHub-logo" width="30" height="30" /></a>
+        </p>
+      </div>
+      <div id="about-me">
+        <h2>About Me</h2>
+        <p>An Instrumentation Engineer by profession.</p>
+        <p>From 2017-2022, I appeared for competitive exams like UPSC-CSE and RBI Grade B</p>
+        <p>From Mid-2022, I've started learning Full-Stack development</p>
+        <p>This website is an attempt to showcase my development knowledge</p>
+      </div>
+      <div id="qualifications">
+        <h2>Qualification</h2>
+        <ol>
+          <li>B.E - Instrumentation & Control Enginnering</li>
+        </ol>
+      </div>
+      <div id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>Photography</li>
+          <li>Listening to Music</li>
+          <li>Playing Chess</li>
+        </ul>
+      </div>
+      <div id="technologies">
+        <h2>Technologies</h2>
+        <table>
+          <tr>
+            <th>Frontend</th>
+            <th>Backend</th>
+            <th>Database</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Python</td>
+            <td>PostgreSQL</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>NodeJS</td>
+            <td>MySQL</td>
+          </tr>
+          <tr>
+            <td>JS</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
