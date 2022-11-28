@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -6,11 +9,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  padding: 16px;
+}
+
+header nav > a {
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+header nav > a:last-child {
+  margin-right: revert;
+}
+
+header nav > a:hover {
+  text-decoration: underline;
+}
+
 .container {
   padding: 16px;
 }
 
-.container > div > h2 {
+.container > section > h2 {
   text-align: center;
 }
 
@@ -71,6 +91,19 @@ form#contact {
   font-weight: 600;
 }
 
-#contact input, #contact textarea {
+#contact input, #contact textarea, #contact button{
   width: 100%;
+  font-size: 1.2rem;
+  padding: 8px;
 }
+
+#contact-me {
+  margin-top: 16px;
+}
+
+footer {
+  padding: 16px;
+  border-top: 2px solid black;
+  text-align: center;
+}
+

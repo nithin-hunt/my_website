@@ -9,8 +9,17 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="intro">
+    <header>
+      <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#qualifications">Qualifications</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#technologies">Technologies</a>
+        <a href="#contact-me">Contact</a>
+      </nav>
+    </header>
+    <main class="container">
+      <article class="intro">
         <img id="profile-image" src="assets/nithin.jpeg" alt="Profile Image - Nithin" />
         <h1>Hi, I'm Nithin</h1>
         <p>I am <span id="dynamic-text" class="dynamic-text-color"></span></p>
@@ -18,29 +27,29 @@
           <a href="https://www.linkedin.com/in/nithin-developer" target="blank"><img src="assets/linkedin-logo.png" alt="Linkedin-logo" width="30" height="30" /></a>
           <a href="https://www.github.com/nithin-hunt" target="blank"><img src="assets/github-logo.png" alt="GitHub-logo" width="30" height="30" /></a>
         </p>
-      </div>
-      <div id="about-me">
+      </article>
+      <section id="about-me">
         <h2>About Me</h2>
         <p>An Instrumentation Engineer by profession.</p>
         <p>From 2017-2022, I appeared for competitive exams like UPSC-CSE and RBI Grade B</p>
         <p>From Mid-2022, I've started learning Full-Stack development</p>
         <p>This website is an attempt to showcase my development knowledge</p>
-      </div>
-      <div id="qualifications">
+      </section>
+      <section id="qualifications">
         <h2>Qualification</h2>
         <ol>
           <li>B.E - Instrumentation & Control Enginnering</li>
         </ol>
-      </div>
-      <div id="hobbies">
+      </section>
+      <section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
           <li>Photography</li>
           <li>Listening to Music</li>
           <li>Playing Chess</li>
         </ul>
-      </div>
-      <div id="technologies">
+      </section>
+      <section id="technologies">
         <h2>Technologies</h2>
         <table>
           <tr>
@@ -62,22 +71,23 @@
             <td>JS</td>
           </tr>
         </table>
-      </div>
-    </div>
-    <div id="contact-me">
-      <form name="contact" id="contact" method="POST" data-netlify="true">
-        <h2>Contact Me</h2>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
-    </div>
+      </section>
+      <section id="contact-me">
+        <form name="contact" id="contact" method="POST" data-netlify="true">
+          <h2>Contact Me</h2>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>Made with ❤️ by Nithin ©2022</footer>
     <script src="main.js"></script>
   </body>
 </html>
