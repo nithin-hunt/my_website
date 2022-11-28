@@ -11,19 +11,30 @@ body {
 
 header {
   padding: 16px;
+  position: sticky;
+  top: 0;
+  border: 1px solid white;
+  background-color: white;
+  border-bottom: 2px solid;
 }
 
+nav a {
+  text-decoration: none;
+}
 header nav > a {
   margin-right: 16px;
-  text-decoration: none;
 }
 
 header nav > a:last-child {
   margin-right: revert;
 }
 
-header nav > a:hover {
+nav > a:hover {
   text-decoration: underline;
+}
+
+nav a:visited {
+  color: royalblue;
 }
 
 .container {
@@ -105,5 +116,59 @@ footer {
   padding: 16px;
   border-top: 2px solid black;
   text-align: center;
+}
+
+.mobile-nav, section.menu {
+  display: none;
+}
+
+@media (width < 500px) {
+  .default-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: revert;
+  }
+  #menu-btn {
+    display: block;
+    background: transparent;
+    border-radius: 8px;
+    margin-left: auto;
+  }
+  section.menu {
+    display: revert;
+    margin-left: -17px;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: white;
+    z-index: 1;
+  }
+  section.menu ul {
+    list-style: none; 
+  }
+  section.menu ul > li {
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+  }
+  section.menu nav {
+    margin-top: 48px;
+  }
+  #close-menu {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: x-large;
+    border: none;
+    background: transparent;
+  }
+}
+
+@media (width <= 332px) {
+  #profile-image {
+    width: 100%;
+  }
 }
 
