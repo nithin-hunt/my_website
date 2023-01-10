@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/project/weather-app/*"
-  to = "https://weather-forecast-nr.netlify.app/:splat"
-  status = 200
-  force = true
