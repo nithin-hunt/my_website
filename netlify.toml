@@ -3,3 +3,9 @@ from = "/project/weather-forecast/*"
 to = "https://weather-forecast-nr.netlify.app/:splat"
 status = 200
 force = false
+
+[[redirects]]
+from = "/project/password-generator/*"
+to = "https://password-generator-nr.netlify.app/:splat"
+status = 200
+force = false
